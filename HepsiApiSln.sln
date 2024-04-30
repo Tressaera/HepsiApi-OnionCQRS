@@ -1,0 +1,62 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34728.123
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{9EB14D96-B216-4A13-91C2-3605263113B1}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{EEEA28A2-4859-4894-BF53-8F1ED2606635}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation", "Presentation", "{4EB75F77-9B55-4AA4-9145-7F4164670DAA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HepsiApi.Application", "Core\HepsiApi.Application\HepsiApi.Application.csproj", "{16E34843-918B-4FA2-8087-6A6AFFF664F1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HepsiApi.Domain", "Core\HepsiApi.Domain\HepsiApi.Domain.csproj", "{B202FD5B-7CA7-45EC-ADAA-9951B2BBD4C1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HepsiApi.Infrastructure", "Infrastructure\HepsiApi.Infrastructure\HepsiApi.Infrastructure.csproj", "{ADDA8926-8FBC-4010-99FA-9EBFFBE58DAE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HepsiApi.Persistence", "Infrastructure\HepsiApi.Persistence\HepsiApi.Persistence.csproj", "{6702B380-AF34-4CBE-982D-2982DC3CE10D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HepsiApi.Api", "Presentation\HepsiApi.Api\HepsiApi.Api.csproj", "{7A841943-E1FE-401D-9C26-ED9289BE2467}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{16E34843-918B-4FA2-8087-6A6AFFF664F1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{16E34843-918B-4FA2-8087-6A6AFFF664F1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{16E34843-918B-4FA2-8087-6A6AFFF664F1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{16E34843-918B-4FA2-8087-6A6AFFF664F1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B202FD5B-7CA7-45EC-ADAA-9951B2BBD4C1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B202FD5B-7CA7-45EC-ADAA-9951B2BBD4C1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B202FD5B-7CA7-45EC-ADAA-9951B2BBD4C1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B202FD5B-7CA7-45EC-ADAA-9951B2BBD4C1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ADDA8926-8FBC-4010-99FA-9EBFFBE58DAE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ADDA8926-8FBC-4010-99FA-9EBFFBE58DAE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ADDA8926-8FBC-4010-99FA-9EBFFBE58DAE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ADDA8926-8FBC-4010-99FA-9EBFFBE58DAE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6702B380-AF34-4CBE-982D-2982DC3CE10D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6702B380-AF34-4CBE-982D-2982DC3CE10D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6702B380-AF34-4CBE-982D-2982DC3CE10D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6702B380-AF34-4CBE-982D-2982DC3CE10D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7A841943-E1FE-401D-9C26-ED9289BE2467}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7A841943-E1FE-401D-9C26-ED9289BE2467}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7A841943-E1FE-401D-9C26-ED9289BE2467}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7A841943-E1FE-401D-9C26-ED9289BE2467}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{16E34843-918B-4FA2-8087-6A6AFFF664F1} = {9EB14D96-B216-4A13-91C2-3605263113B1}
+		{B202FD5B-7CA7-45EC-ADAA-9951B2BBD4C1} = {9EB14D96-B216-4A13-91C2-3605263113B1}
+		{ADDA8926-8FBC-4010-99FA-9EBFFBE58DAE} = {EEEA28A2-4859-4894-BF53-8F1ED2606635}
+		{6702B380-AF34-4CBE-982D-2982DC3CE10D} = {EEEA28A2-4859-4894-BF53-8F1ED2606635}
+		{7A841943-E1FE-401D-9C26-ED9289BE2467} = {4EB75F77-9B55-4AA4-9145-7F4164670DAA}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7251E8B9-873D-4138-9BDA-603F6ACAE2CE}
+	EndGlobalSection
+EndGlobal

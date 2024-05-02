@@ -1,12 +1,14 @@
-﻿using HepsiApi.Domain.Entities;
+﻿using Bogus;
+using Bogus.DataSets;
+using HepsiApi.Domain.Entities;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Metadata.Builders;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.ConstrainedExecution;
 using System.Text;
 using System.Threading.Tasks;
-using Microsoft.EntityFrameworkCore;
-using Microsoft.EntityFrameworkCore.Metadata.Builders;
-using Bogus;
 
 namespace HepsiApi.Persistence.Configuration
 {
@@ -14,31 +16,30 @@ namespace HepsiApi.Persistence.Configuration
     {
         public void Configure(EntityTypeBuilder<Brand> builder)
         {
-            builder.Property(x => x.Name).HasMaxLength(256);
-
-            Faker faker = new("tr");
+            builder.Property(x=>x.Name).HasMaxLength(256);
+            Faker faker= new("tr");
             Brand brand1 = new()
             {
-                Id=1,
-                Name=faker.Commerce.Department(),
-                CreatedDate=DateTime.Now,
+                Id = 1,
+                Name = faker.Commerce.Department(),
+                CreatedDate = DateTime.Now,
                 IsDeleted=false
-            };  
+            };       
             Brand brand2 = new()
             {
-                Id=2,
-                Name=faker.Commerce.Department(),
-                CreatedDate=DateTime.Now,
+                Id = 2,
+                Name = faker.Commerce.Department(),
+                CreatedDate = DateTime.Now,
                 IsDeleted=false
-            };  
+            };       
             Brand brand3 = new()
             {
-                Id=2,
-                Name=faker.Commerce.Department(),
-                CreatedDate=DateTime.Now,
+                Id = 3,
+                Name = faker.Commerce.Department(),
+                CreatedDate = DateTime.Now,
                 IsDeleted=true
             };
-            builder.HasData(brand1,brand2,brand3);
+            builder.HasData(brand1, brand2, brand3);
         }
     }
 }

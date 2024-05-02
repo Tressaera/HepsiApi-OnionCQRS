@@ -17,38 +17,38 @@ namespace HepsiApi.Persistence.Configuration
             Category category1 = new()
             {
                 Id = 1,
-                Name = "Elektrik",
-                Priority = 1,
+                Name= "Elektrik",
+                Priority=1,
                 ParentId = 0,
-                IsDeleted = false,
-                CreatedDate = DateTime.Now
-            }; 
-            Category category2 = new()
-            {
-                Id = 1,
-                Name = "Moda",
-                Priority = 2,
-                ParentId = 0,
-                IsDeleted = false,
-                CreatedDate = DateTime.Now
-            };      
-            Category parent1 = new()
-            {
-                Id = 1,
-                Name = "Bilgisayar",
-                Priority = 1,
-                ParentId = 1,
-                IsDeleted = false,
-                CreatedDate = DateTime.Now
+                IsDeleted=false,
+                CreatedDate=DateTime.Now
             };     
-            Category parent2 = new()
+            Category category2= new()
             {
-                Id = 1,
-                Name = "Kadın",
-                Priority = 1,
+                Id = 2,
+                Name= "Moda",
+                Priority=2,
+                ParentId = 0,
+                IsDeleted=false,
+                CreatedDate=DateTime.Now
+            };    
+            Category parent1= new()
+            {
+                Id = 2,
+                Name= "Bilgisayar",
+                Priority=1,
+                ParentId = 1,
+                IsDeleted=false,
+                CreatedDate=DateTime.Now
+            };   
+            Category parent2= new()
+            {
+                Id = 2,
+                Name= "Kadın",
+                Priority=1,
                 ParentId = 2,
-                IsDeleted = false,
-                CreatedDate = DateTime.Now
+                IsDeleted=false,
+                CreatedDate=DateTime.Now
             };
             builder.HasData(category1, category2, parent1, parent2);
         }
